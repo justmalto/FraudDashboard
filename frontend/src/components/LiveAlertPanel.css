@@ -1,0 +1,107 @@
+/* === Base Panel Styling (from your baseline) === */
+.alert-panel {
+  align-items: center;
+  padding-left: 1%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(79, 78, 78, 0.1);
+  border-radius: 16px;
+   background-color: #0e0018;
+  transition: transform 0.2s ease;
+  font-family: Arial, sans-serif;
+}
+
+.alert-panel:hover {
+  transform: translateY(-4px);
+}
+
+/* Title */
+.alert-panel-title,
+.alert-panel-header h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
+  align-self: start;
+  padding: 1%;
+  margin: 0;
+}
+
+/* Header (title, status, toggle button) */
+.alert-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/* Status indicator */
+.status {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.status.connected {
+  background: #e6f9e6;
+  color: #2d7a2d;
+}
+.status.reconnecting {
+  background: #fff8e6;
+  color: #b37400;
+}
+.status.error {
+  background: #ffe6e6;
+  color: #b30000;
+}
+
+/* Toggle button */
+.toggle-btn {
+  padding: 6px 12px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0e0018;
+  transition: background 0.2s ease;
+}
+.toggle-btn:hover {
+  background: #170028;
+}
+.toggle-btn.active {
+  background: #000052;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+/* === Table Styling (from your baseline, with integration) === */
+.alert-panel-tablecontainer,
+.alert-table-container {
+  max-height: 98%;
+  max-width: 98%;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.alert-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  table-layout: auto;
+}
+
+.alert-table th,
+.alert-table td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid #9c9a9a;
+  width: calc(98% / 9);
+  height: calc(100% / 10);
+}
+
+/* Highlight high-risk rows */
+.high-risk {
+  color: red;
+  font-weight: bold;
+  background-color: #ffe6e6;
+}

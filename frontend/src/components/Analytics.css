@@ -1,0 +1,37 @@
+.analytics-container {
+  display: grid;
+  flex-direction: column;
+  gap: 2%;
+  padding: 2%;
+}
+
+.analytics-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(79, 78, 78, 0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  align-items: center;
+}
+
+.analytics-card:hover {
+  transform: translateY(-4px);
+}
+
+.analytics-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #c7bebe;
+  padding-top: 2%;
+  align-self: start;
+}
+
+.pie-container{
+  height: 300px;
+  width: 300px;
+  padding-left: 10%;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+}

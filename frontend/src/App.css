@@ -1,0 +1,31 @@
+#root {
+  max-width: 1920px;
+}
+
+/* App.css */
+.app {
+  display: grid;
+  /* grid-template-rows: ; */
+  height: 100%; 
+  overflow: hidden;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  overflow: hidden; 
+  overflow-y: hidden;
+  height: 90vh;
+}
+
+.analytics-container {
+  grid-template-rows: 4;
+  overflow-y: auto;       
+  height: 100%; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none;     
+}
+
+.analytics-container::-webkit-scrollbar {
+  display: none;             
+}

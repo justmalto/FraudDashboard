@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0e0018;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(79, 78, 78, 0.1);
+}
+.navbar-title{
+  font-size: 1.5rem;
+  align-self: start;
+  margin: 0;
+}
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* space between buttons */
+}
+
+/* Base button */
+.navbar-button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #000052;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.navbar-button:hover {
+  background-color: #000041; 
+  transform: scale(1.05); 
+}
+
+/* Running state (stop mode) */
+.navbar-button.running {
+  background-color: #000000; 
+}
+
+/* Hover effect while running */
+.navbar-button.running:hover {
+  background-color: #000000; 
+}
