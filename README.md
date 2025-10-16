@@ -44,8 +44,8 @@ It combines:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/fraud-detection-pipeline.git
-cd fraud-detection-pipeline
+git clone https://github.com/justmalto/FraudDashboard.git
+cd FraudDashboard
 ```
 
 ---
@@ -60,15 +60,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3. Run MLflow (optional)
-
-```bash
-mlflow ui --port 5000
-```
-
----
-
-### 4. Start Kafka (Bitnami Docker)
+### 3. Start Kafka (Bitnami Docker)
 
 This project uses **Bitnami Docker images** for Kafka and Zookeeper to ensure consistent, portable deployment.
 
@@ -93,7 +85,7 @@ docker run -d --name kafka --network kafka-net \
 
 ---
 
-### 5. Start FastAPI backend
+### 4. Start FastAPI backend
 
 ```bash
 uvicorn app.main:app --reload
@@ -101,7 +93,7 @@ uvicorn app.main:app --reload
 
 ---
 
-### 6. Start React frontend
+### 5. Start React frontend
 
 ```bash
 cd frontend
