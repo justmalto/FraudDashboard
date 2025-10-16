@@ -22,7 +22,8 @@ It combines:
 
 ## 🧩 System Architecture
 
-![Architecture Diagram](<My First Board.jpg>)
+![System Architecture](https://github.com/user-attachments/assets/30d9e29e-a5a0-41c7-8db3-d132b28108c8)
+
 
 ## 🧰 Technologies Used
 
